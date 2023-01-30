@@ -32,4 +32,7 @@ public class P02_Mobilepage {
     public WebElement costofSonyXperia(){
         return Hooks.driver.findElement(By.xpath("//*[@id=\"product-price-1\"]/span"));
     }
+    public WebElement addtocartbtnsonyxperia(){
+        return Hooks.driver.findElement(By.xpath("//*[@id=\"top\"]/body/div/div/div[2]/div/div[2]/div[1]/div[3]/ul/li[3]/div/div[3]/button"));
+    }
 }

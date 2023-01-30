@@ -1,5 +1,5 @@
 @smoke
-Feature: F01 | Verify that cost of product in list page and details page are equal
+Feature: F02 | Verify that cost of product in list page and details page are equal
   Scenario: Verify that cost of product in list page and details page are equal
     Given user goto "http://live.techpanda.org/index.php/"
     And user click on MOBILE button
