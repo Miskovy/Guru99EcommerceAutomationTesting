@@ -11,4 +11,10 @@ public class P01_Mainpage {
     public WebElement mobilebtn(){
         return Hooks.driver.findElement(By.xpath("//*[@id=\"nav\"]/ol/li[1]/a"));
     }
+    public WebElement myaccmainlink(){
+        return Hooks.driver.findElement(By.xpath("//*[@id=\"header\"]/div/div[2]/div/a/span[2]"));
+    }
+    public WebElement myacclink(){
+        return Hooks.driver.findElement(By.xpath("//*[@id=\"header-account\"]/div/ul/li[1]/a"));
+    }
 }
