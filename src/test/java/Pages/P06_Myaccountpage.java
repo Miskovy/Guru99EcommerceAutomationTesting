@@ -37,4 +37,17 @@ public class P06_Myaccountpage {
     public WebElement TVbtn(){
         return Hooks.driver.findElement(By.xpath("//*[@id=\"nav\"]/ol/li[2]/a"));
     }
+    public WebElement mywishlistlink(){
+        return Hooks.driver.findElement(By.xpath("//*[@id=\"top\"]/body/div/div/div[2]/div/div[1]/div/div[2]/ul/li[8]/a"));
+    }
+    //Login Section
+    public WebElement emailadressboxlogin(){
+        return Hooks.driver.findElement(By.xpath("//*[@id=\"email\"]"));
+    }
+    public WebElement passwordboxlogin(){
+        return Hooks.driver.findElement(By.xpath("//*[@id=\"pass\"]"));
+    }
+    public WebElement loginbtn(){
+        return Hooks.driver.findElement(By.xpath("//*[@id=\"send2\"]"));
+    }
 }

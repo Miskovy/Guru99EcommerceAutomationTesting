@@ -24,4 +24,8 @@ public class P08_MyWishlistPage {
     public WebElement sharewishlistbtn2(){
         return Hooks.driver.findElement(By.xpath("//*[@id=\"form-validate\"]/div[2]/button"));
     }
+    //Dashboard
+    public WebElement addtocartbtn1(){
+        return Hooks.driver.findElement(By.xpath("//*[@id=\"item_61775\"]/td[5]/div/button"));
+    }
 }

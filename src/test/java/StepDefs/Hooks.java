@@ -2,6 +2,7 @@ package StepDefs;
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxBinary;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
@@ -16,6 +17,8 @@ public class Hooks {
     public static WebDriver driver;
     @Before
     public static void OpenBrowser() {
+        //Firefox Driver
+        /*
         System.setProperty("webdriver.gecko.driver", "C:\\geckodriver.exe");
         File pathBinary = new File("C:\\Program Files\\Mozilla Firefox\\firefox.exe");
         FirefoxBinary firefoxBinary = new FirefoxBinary(pathBinary);
@@ -23,6 +26,10 @@ public class Hooks {
         FirefoxOptions options = new FirefoxOptions();
         desired.setCapability(FirefoxOptions.FIREFOX_OPTIONS, options.setBinary(firefoxBinary));
         driver = new FirefoxDriver(options);
+        */
+        //Chrome Driver
+        System.setProperty("webdriver.chrome.driver","C:\\Program Files\\chromedriver.exe");
+        driver = new ChromeDriver();
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 
