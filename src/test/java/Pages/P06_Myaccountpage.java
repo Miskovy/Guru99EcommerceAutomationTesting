@@ -40,6 +40,12 @@ public class P06_Myaccountpage {
     public WebElement mywishlistlink(){
         return Hooks.driver.findElement(By.xpath("//*[@id=\"top\"]/body/div/div/div[2]/div/div[1]/div/div[2]/ul/li[8]/a"));
     }
+    public WebElement myorderslink(){
+        return Hooks.driver.findElement(By.xpath("//*[@id=\"top\"]/body/div/div/div[2]/div/div[1]/div/div[2]/ul/li[4]/a"));
+    }
+    public WebElement reorderlink(){
+        return Hooks.driver.findElement(By.xpath("//*[@id=\"my-orders-table\"]/tbody/tr[1]/td[6]/span/a[2]"));
+    }
     //Login Section
     public WebElement emailadressboxlogin(){
         return Hooks.driver.findElement(By.xpath("//*[@id=\"email\"]"));

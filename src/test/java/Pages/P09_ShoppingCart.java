@@ -35,4 +35,10 @@ public class P09_ShoppingCart {
     public WebElement totalprice(){
         return Hooks.driver.findElement(By.xpath("//*[@id=\"shopping-cart-totals-table\"]/tfoot/tr/td[2]/strong/span"));
     }
+    public WebElement QTYBox(){
+        return Hooks.driver.findElement(By.xpath("//*[@id=\"shopping-cart-table\"]/tbody/tr/td[4]/input"));
+    }
+    public WebElement updatebtn(){
+        return Hooks.driver.findElement(By.xpath("//*[@id=\"shopping-cart-table\"]/tbody/tr/td[4]/button"));
+    }
 }

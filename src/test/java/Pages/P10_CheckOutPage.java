@@ -26,6 +26,9 @@ public class P10_CheckOutPage {
     public WebElement continuebtn(){
         return Hooks.driver.findElement(By.xpath("//*[@id=\"billing-buttons-container\"]/button"));
     }
+    public WebElement continuebtn1(){
+        return Hooks.driver.findElement(By.xpath("//*[@id=\"billing-buttons-container\"]/button"));
+    }
     public WebElement fixedshppingprice(){
         return Hooks.driver.findElement(By.xpath("//*[@id=\"checkout-shipping-method-load\"]/dl/dd/ul/li/label/span"));
     }

@@ -67,6 +67,9 @@ public class D06 {
     }
     @And("user Enter billing information")
     public void enterbillinginfo() throws InterruptedException {
+        p10.continuebtn1().click();
+        //This is for only if you didnt do the previous step
+        /*
         Select select3 = new Select(p10.Stateprovincedropbox());
         Select select4 = new Select(p10.countrydropbox());
         p10.Addressbox().clear();
@@ -85,7 +88,7 @@ public class D06 {
         select4.selectByVisibleText("United States");
         p10.telephonebox().clear();
         p10.telephonebox().sendKeys("12345678");
-        Thread.sleep(1000);
+        Thread.sleep(1000);*/
     }
     @And("user click continue in shipping method")
     public void clickcontinuebtn() throws InterruptedException {

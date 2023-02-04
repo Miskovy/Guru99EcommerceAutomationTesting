@@ -26,6 +26,6 @@ public class P08_MyWishlistPage {
     }
     //Dashboard
     public WebElement addtocartbtn1(){
-        return Hooks.driver.findElement(By.xpath("//*[@id=\"item_61775\"]/td[5]/div/button"));
+        return Hooks.driver.findElement(By.xpath("//button[@title='Add to Cart']"));
     }
 }
