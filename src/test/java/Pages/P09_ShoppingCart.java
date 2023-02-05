@@ -8,6 +8,9 @@ public class P09_ShoppingCart {
     public WebElement successMSGCart(){
         return Hooks.driver.findElement(By.xpath("//*[@id=\"top\"]/body/div/div/div[2]/div/div/div/ul/li"));
     }
+    public WebElement successMSGIphone(){
+        return Hooks.driver.findElement(By.xpath("//*[@id=\"top\"]/body/div/div/div[2]/div/div/div/ul/li"));
+    }
     public WebElement proceedtocheck(){
         return Hooks.driver.findElement(By.xpath("//*[@id=\"top\"]/body/div/div/div[2]/div/div/div/div[3]/div/ul/li[1]/button"));
     }
@@ -40,5 +43,11 @@ public class P09_ShoppingCart {
     }
     public WebElement updatebtn(){
         return Hooks.driver.findElement(By.xpath("//*[@id=\"shopping-cart-table\"]/tbody/tr/td[4]/button"));
+    }
+    public WebElement discountBox(){
+        return Hooks.driver.findElement(By.xpath("//*[@id=\"coupon_code\"]"));
+    }
+    public WebElement applydiscountlink(){
+        return Hooks.driver.findElement(By.xpath("//*[@id=\"discount-coupon-form\"]/div/div/div/div/button"));
     }
 }

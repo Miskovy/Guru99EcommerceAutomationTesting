@@ -35,6 +35,9 @@ public class P02_Mobilepage {
     public WebElement addtocartbtnsonyxperia(){
         return Hooks.driver.findElement(By.xpath("//*[@id=\"top\"]/body/div/div/div[2]/div/div[2]/div[1]/div[3]/ul/li[3]/div/div[3]/button"));
     }
+    public WebElement addtocartIPHONE(){
+        return Hooks.driver.findElement(By.xpath("//*[@id=\"top\"]/body/div/div/div[2]/div/div[2]/div[1]/div[3]/ul/li[1]/div/div[3]/button"));
+    }
     public WebElement addtocomparelist1(){
         return Hooks.driver.findElement(By.xpath("//*[@id=\"top\"]/body/div/div/div[2]/div/div[2]/div[1]/div[3]/ul/li[3]/div/div[3]/ul/li[2]/a"));//Sony Xperia
     }
