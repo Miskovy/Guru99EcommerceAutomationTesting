@@ -32,7 +32,7 @@ public class D09 {
     @Then("the price is discounted by \\\"(.*)\\\"$")
     public void assertthetotalprice(String amount){
         String beforediscountamount = Hooks.driver.findElement(By.xpath("//*[@id=\"shopping-cart-totals-table\"]/tbody/tr[1]/td[2]/span")).getText();
-        String beforediscountamount2 = beforediscountamount.replace("$", "");
+        String beforediscountamount2 = beforediscountamount.replace("$", ""); // 500.00 STRING
         String discount = Hooks.driver.findElement(By.xpath("//*[@id=\"shopping-cart-totals-table\"]/tbody/tr[2]/td[2]/span")).getText();
         String discount2 = discount.replace("-", "");
         String discount3 = discount2.replace("$", "");
