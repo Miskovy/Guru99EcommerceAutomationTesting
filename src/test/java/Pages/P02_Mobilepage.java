@@ -47,4 +47,7 @@ public class P02_Mobilepage {
     public WebElement comparebtn(){
         return Hooks.driver.findElement(By.xpath("//button[@title='Compare']"));
     }
+    public WebElement sonyXperiaImg(){
+        return Hooks.driver.findElement(By.xpath("//*[@id=\"product-collection-image-1\"]"));
+    }
 }

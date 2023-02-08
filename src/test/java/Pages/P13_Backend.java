@@ -15,6 +15,18 @@ public class P13_Backend {
     public WebElement ordersextendsales(){
         return Hooks.driver.findElement(By.xpath("//*[@id=\"nav\"]/li[1]/ul/li[1]/a"));
     }
+    public WebElement cataloguemenu(){
+        return Hooks.driver.findElement(By.xpath("//*[@id=\"nav\"]/li[2]"));
+    }
+    public WebElement reviewandratingslink(){
+        return Hooks.driver.findElement(By.xpath("//*[@id=\"nav\"]/li[2]/ul/li"));
+    }
+    public WebElement customerreviews(){
+        return Hooks.driver.findElement(By.xpath("//*[@id=\"nav\"]/li[2]/ul/li/ul/li[1]"));
+    }
+    public WebElement pendingreviewslink(){
+        return Hooks.driver.findElement(By.xpath("//*[@id=\"nav\"]/li[2]/ul/li/ul/li[1]/ul/li[1]/a"));
+    }
     // Sales/orders Dashboard
     public WebElement exporttodropdown(){
         return Hooks.driver.findElement(By.xpath("//*[@id=\"sales_order_grid_export\"]"));
@@ -37,4 +49,18 @@ public class P13_Backend {
     public WebElement errormsg1(){
         return Hooks.driver.findElement(By.xpath("//*[@id=\"messages\"]/ul/li/ul/li/span"));
     }
+    //Pending Reviews Dashboard
+    public WebElement sortbyIDlink(){
+        return Hooks.driver.findElement(By.xpath("//*[@id=\"reviwGrid_table\"]/thead/tr[1]/th[2]/span/a"));
+    }
+    public WebElement editlink1(){
+        return Hooks.driver.findElement(By.xpath("//*[@id=\"reviwGrid_table\"]/tbody/tr[1]/td[10]/a"));
+    }
+    public WebElement statusdropdown1(){
+        return Hooks.driver.findElement(By.xpath("//*[@id=\"status_id\"]"));
+    }
+    public WebElement saveReviewbtn(){
+        return Hooks.driver.findElement(By.xpath("//*[@id=\"save_button\"]"));
+    }
+
 }
