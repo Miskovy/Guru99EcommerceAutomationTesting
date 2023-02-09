@@ -18,6 +18,9 @@ public class P13_Backend {
     public WebElement cataloguemenu(){
         return Hooks.driver.findElement(By.xpath("//*[@id=\"nav\"]/li[2]"));
     }
+    public WebElement invoicemenu(){
+    return Hooks.driver.findElement(By.xpath("//*[@id=\"nav\"]/li[1]/ul/li[2]/a"));
+    }
     public WebElement reviewandratingslink(){
         return Hooks.driver.findElement(By.xpath("//*[@id=\"nav\"]/li[2]/ul/li"));
     }
@@ -62,5 +65,8 @@ public class P13_Backend {
     public WebElement saveReviewbtn(){
         return Hooks.driver.findElement(By.xpath("//*[@id=\"save_button\"]"));
     }
-
+    //Invoice Menu Dashboard
+    public WebElement invoicedatesort1(){
+        return Hooks.driver.findElement(By.xpath("//*[@id=\"sales_invoice_grid_table\"]/thead/tr[1]/th[3]/span/a/span"));
+    }
 }
