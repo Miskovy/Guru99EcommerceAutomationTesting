@@ -17,4 +17,7 @@ public class P01_Mainpage {
     public WebElement myacclink(){
         return Hooks.driver.findElement(By.xpath("//*[@id=\"header-account\"]/div/ul/li[1]/a"));
     }
+    public WebElement advancedSearchlink(){
+        return Hooks.driver.findElement(By.xpath("//*[@id=\"top\"]/body/div/div/div[3]/div/div[3]/ul/li[3]/a"));
+    }
 }
