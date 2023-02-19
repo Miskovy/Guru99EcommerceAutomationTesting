@@ -30,6 +30,12 @@ public class P13_Backend {
     public WebElement pendingreviewslink(){
         return Hooks.driver.findElement(By.xpath("//*[@id=\"nav\"]/li[2]/ul/li/ul/li[1]/ul/li[1]/a"));
     }
+    public WebElement customersmenulink(){
+        return Hooks.driver.findElement(By.xpath("//*[@id=\"nav\"]/li[3]/a/span"));
+    }
+    public WebElement managecustomersmenulink(){
+        return Hooks.driver.findElement(By.xpath("//*[@id=\"nav\"]/li[3]/ul/li/a"));
+    }
     // Sales/orders Dashboard
     public WebElement exporttodropdown(){
         return Hooks.driver.findElement(By.xpath("//*[@id=\"sales_order_grid_export\"]"));
